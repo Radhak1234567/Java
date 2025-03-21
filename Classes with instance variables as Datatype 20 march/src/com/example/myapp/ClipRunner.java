@@ -10,7 +10,7 @@ public class ClipRunner {
                 new Clip(Color.YELLOW),
                 new Clip(Color.BLACK)
         };
-
+        System.out.println("+++++++++++++++");
         System.out.println("+++++++++++++++");
 
         Pushpa pushpa = new Pushpa(clips);
