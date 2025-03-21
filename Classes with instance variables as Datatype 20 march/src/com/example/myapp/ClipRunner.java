@@ -12,6 +12,7 @@ public class ClipRunner {
         };
 
         System.out.println("+++++++++++++++");
+        System.out.println("+++++++++++++++");
 
         Pushpa pushpa = new Pushpa(clips);
         pushpa.useClip(clips);
