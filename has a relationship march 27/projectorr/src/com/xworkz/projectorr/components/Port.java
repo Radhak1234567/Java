@@ -1,7 +1,7 @@
 package com.xworkz.projectorr.components;
 
 public class Port {
-    private String portType; // Private variable
+    private String portType;
 
 
     public Port(String portType) {

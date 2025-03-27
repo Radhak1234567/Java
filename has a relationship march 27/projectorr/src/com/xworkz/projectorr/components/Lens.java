@@ -1,6 +1,7 @@
 package com.xworkz.projectorr.components;
 
-public class Lens { private String lensType;
+public class Lens {
+    private String lensType;
     private int focalLength;
 
     public Lens(String lensType, int focalLength) {

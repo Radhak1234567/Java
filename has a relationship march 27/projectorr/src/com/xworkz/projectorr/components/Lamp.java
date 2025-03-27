@@ -1,6 +1,7 @@
 package com.xworkz.projectorr.components;
 
-public class Lamp { private String brand;
+public class Lamp {
+    private String brand;
     private Warranty warranty;
 
     public Lamp(String brand, Warranty warranty) {

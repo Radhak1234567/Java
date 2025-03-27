@@ -1,6 +1,7 @@
 package com.xworkz.projectorr.components;
 
-public class Remote {  private String model;
+public class Remote {
+    private String model;
     private Battery battery;
 
     public Remote(String model, Battery battery) {

@@ -1,6 +1,7 @@
 package com.xworkz.projectorr.components;
 
-public class Warranty {private String startDate;
+public class Warranty {
+    private String startDate;
     private String endDate;
 
     public Warranty(String startDate, String endDate) {

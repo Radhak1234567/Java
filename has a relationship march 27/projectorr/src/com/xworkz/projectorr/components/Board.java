@@ -1,6 +1,7 @@
 package com.xworkz.projectorr.components;
 
-public class Board { private String manufacturer;
+public class Board {
+    private String manufacturer;
     private String capacitor;
 
     public Board(String manufacturer, String capacitor) {

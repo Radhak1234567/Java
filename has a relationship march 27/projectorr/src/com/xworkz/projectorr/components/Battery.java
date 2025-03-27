@@ -1,6 +1,7 @@
 package com.xworkz.projectorr.components;
 
-public class Battery {  private String brand;
+public class Battery {
+    private String brand;
     private int voltage;
 
     public Battery(String brand, int voltage) {

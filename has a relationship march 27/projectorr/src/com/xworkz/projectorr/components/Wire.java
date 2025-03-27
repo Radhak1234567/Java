@@ -1,6 +1,7 @@
 package com.xworkz.projectorr.components;
 
-public class Wire {private String material;
+public class Wire {
+    private String material;
     private String quality;
 
     public Wire(String material, String quality) {
