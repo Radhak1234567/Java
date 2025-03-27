@@ -9,7 +9,7 @@ import com.xworkz.projectorr.components.Lamp;
 import com.xworkz.projectorr.components.Wire;
 import com.xworkz.projectorr.components.Board;
 import com.xworkz.projectorr.components.Remote;
-
+import com.xworkz.projectorr.components.Port;
 public class ProjectorrRunner {
     public static void main(String[] args) {
 
@@ -22,7 +22,7 @@ public class ProjectorrRunner {
     Wire wire = new Wire("Copper", "Premium");
     Board board = new Board("Intel", "Electrolytic");
     Remote remote = new Remote("Sony-X100", battery);
-
+Port port=new Port("c type");
 
     System.out.println("Initial Values:");
     lens.display();
@@ -31,26 +31,26 @@ public class ProjectorrRunner {
     board.display();
     remote.display();
 
-
-    System.out.println("\nAfter Modifications:");
+        System.out.println("======================================");
+    System.out.println("After Modifications:");
     lens.setLensType("Concave");
     lens.setFocalLength(75);
     lamp.setBrand("Osram");
     wire.setMaterial("Aluminum");
     wire.setQuality("Standard");
-    board.setManufacturer("AMD");
-    board.setCapacitor("Ceramic");
-    remote.setModel("Samsung-Z200");
-    battery.setBrand("Energizer");
+    board.setManufacturer("radha");
+    board.setCapacitor("Cera");
+    remote.setModel("Samsung-200");
+    battery.setBrand("samsung");
     battery.setVoltage(12);
+        port.setPortType("b type");
 
-
-    
-    lens.display();
+        lens.display();
     lamp.display();
     wire.display();
     board.display();
     remote.display();
+        port.display();
 }
 }
 
