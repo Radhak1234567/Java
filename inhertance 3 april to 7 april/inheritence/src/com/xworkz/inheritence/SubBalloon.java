@@ -1,6 +1,6 @@
 package com.xworkz.inheritence;
 
-public class SubBalloon { public SubBalloon() {
+public class SubBalloon  extends  Ballon{ public SubBalloon() {
     super();
     System.out.println("No-arg constructor of SubBalloon");
 }

@@ -1,35 +1,22 @@
 package com.xworkz.inheritence;
 
 public class KitchenAppliance extends Appliance {
+    @Override
+    public void method1() { System.out.println("KitchenAppliance method1"); }
 
     @Override
-    void method1() {
-        System.out.println("KitchenAppliance: Used in kitchen");
-    }
+    public void method2() { System.out.println("KitchenAppliance method2"); }
 
     @Override
-    void method2() {
-        System.out.println("KitchenAppliance: Energy efficient");
-    }
+    public void method3() { System.out.println("KitchenAppliance method3"); }
 
     @Override
-    void method3() {
-        System.out.println("KitchenAppliance: Helps in cooking");
-    }
+    public void method4() { System.out.println("KitchenAppliance method4"); }
 
     @Override
-    void method4() {
-        System.out.println("KitchenAppliance: Needs regular cleaning");
-    }
+    public void method5() { System.out.println("KitchenAppliance method5"); }
 
-    @Override
-    void method5() {
-        System.out.println("KitchenAppliance: Includes ovens, toasters, blenders");
+    public void specialFeature() {
+        System.out.println("KitchenAppliance special feature!");
     }
-
-    // Child-specific method
-    void specialFeature() {
-        System.out.println("KitchenAppliance: Special feature - Smart cooking modes");
-    }
-
 }
