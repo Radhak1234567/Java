@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Admixture {
-    String material;
-    String name;
-    double capacity;
+  private   String material;
+    private String name;
+    private double capacity;
 
     public Admixture(String material, String name, double capacity) {
         this. material =material;

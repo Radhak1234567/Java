@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Abacus {
-    String material;
-    String name;
-    double capacity;
+    private String material;
+     private String name;
+    private  double capacity;
 
     public Abacus(String material, String name, double capacity) {
         this. material =material;
