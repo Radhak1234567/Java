@@ -5,7 +5,7 @@ public class Doll {
     String name;
     String material;
 
-    public Doll(int id, String name, double material) {
+    public Doll(int id, String name, String material) {
         this.id = id;
         this.name = name;
         this.material = material;
