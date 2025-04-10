@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Spaceship {
-    int id;
-    String name;
-    double speed;
+ private    int id;
+  private   String name;
+  private   double speed;
 
     public Spaceship(int id, String name, double speed) {
         this.id = id;
@@ -15,5 +15,8 @@ public class Spaceship {
     public String toString() {
         return "Spaceship{" + "id=" + id + ", name='" + name + '\'' + ", speed=" + speed + '}';
     }
-
+    @Override
+    public int hashCode() {
+        return 92459;
+    }
 }

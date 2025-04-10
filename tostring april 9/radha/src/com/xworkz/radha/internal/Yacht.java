@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Yacht {
-    int id;
-    String name;
-    double length;
+  private   int id;
+ private    String name;
+  private   double length;
 
     public Yacht(int id, String name, double length) {
         this.id = id;
@@ -14,5 +14,9 @@ public class Yacht {
     @Override
     public String toString() {
         return "Yacht{" + "id=" + id + ", name='" + name + '\'' + ", length=" + length + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 9876;
     }
 }

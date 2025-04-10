@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Room {
-    int id;
-    String name;
-    double capacity;
+  private   int id;
+    private String name;
+   private double capacity;
 
     public Room(int id, String name, double capacity) {
         this.id = id;
@@ -13,9 +13,13 @@ public class Room {
 
     @Override
     public String toString() {
-        return "Bus{" + "id=" + id + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+
+        return "Room{" + "id=" + id + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
     }
 
-
+    @Override
+    public int hashCode() {
+        return 2432459;
+    }
 
 }

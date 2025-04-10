@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Jeep {
-    int id;
-    String name;
-    double torque;
+   private int id;
+   private String name;
+   private double torque;
 
     public Jeep(int id, String name, double torque) {
         this.id = id;
@@ -14,5 +14,9 @@ public class Jeep {
     @Override
     public String toString() {
         return "Jeep{" + "id=" + id + ", name='" + name + '\'' + ", torque=" + torque + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 99;
     }
 }

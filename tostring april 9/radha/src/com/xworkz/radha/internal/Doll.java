@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Doll {
-    int id;
-    String name;
-    String material;
+  private   int id;
+  private   String name;
+  private   String material;
 
     public Doll(int id, String name, String material) {
         this.id = id;
@@ -14,5 +14,9 @@ public class Doll {
     @Override
     public String toString() {
         return "Doll{" + "id=" + id + ", name='" + name + '\'' + ", material='" + material + '\'' + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 45;
     }
 }

@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Bus {
-    int id;
-    String name;
-    double capacity;
+  private   int id;
+   private String name;
+  private   double capacity;
 
     public Bus(int id, String name, double capacity) {
         this.id = id;
@@ -14,6 +14,10 @@ public class Bus {
     @Override
     public String toString() {
         return "Bus{" + "id=" + id + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 87;
     }
 
 

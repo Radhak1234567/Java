@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Toy {
-    int id;
-    String name;
-    double capacity;
+  private   int id;
+   private String name;
+   private double capacity;
 
     public Toy(int id, String name, double capacity) {
         this.id = id;
@@ -13,7 +13,12 @@ public class Toy {
 
     @Override
     public String toString() {
-        return "Bus{" + "id=" + id + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+
+        return "Toy{" + "id=" + id + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 4567;
     }
 
 

@@ -2,9 +2,9 @@ package com.xworkz.radha.internal;
 
 public class Vehicle {
 
-        int id;
-        String name;
-        double loadCapacity;
+      private   int id;
+       private String name;
+        private double loadCapacity;
 
         public Vehicle(int id, String name, double loadCapacity) {
             this.id = id;
@@ -14,7 +14,11 @@ public class Vehicle {
 
         @Override
         public String toString() {
-            return "Truck{" + "id=" + id + ", name='" + name + '\'' + ", loadCapacity=" + loadCapacity + '}';
+            return " Vehicle{" + "id=" + id + ", name='" + name + '\'' + ", loadCapacity=" + loadCapacity + '}';
         }
+    @Override
+    public int hashCode() {
+        return 23;
+    }
     }
 

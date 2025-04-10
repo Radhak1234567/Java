@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Moon {
-    int id;
-    String name;
-    double length;
+  private   int id;
+   private String name;
+  private   double length;
 
     public Moon(int id, String name, double length) {
         this.id = id;
@@ -13,6 +13,10 @@ public class Moon {
 
     @Override
     public String toString() {
-        return "Yacht{" + "id=" + id + ", name='" + name + '\'' + ", length=" + length + '}';
+        return "Moon{" + "id=" + id + ", name='" + name + '\'' + ", length=" + length + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 1967539;
     }
 }

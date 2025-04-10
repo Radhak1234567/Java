@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Diamond {
-    String material;
-    String name;
-    double capacity;
+  private   String material;
+ private    String name;
+   private double capacity;
 
     public Diamond(String material, String name, double capacity) {
         this. material =material;
@@ -13,6 +13,10 @@ public class Diamond {
 
     @Override
     public String toString() {
-        return "Bus{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+        return "Diamond{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 76;
     }
 }

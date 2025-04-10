@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Oxygen {
-    String material;
-    String name;
-    double capacity;
+ private    String material;
+private String name;
+private double capacity;
 
     public Oxygen(String material, String name, double capacity) {
         this. material =material;
@@ -13,6 +13,10 @@ public class Oxygen {
 
     @Override
     public String toString() {
-        return "Bus{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+        return "Oxygen{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 13243599;
     }
 }

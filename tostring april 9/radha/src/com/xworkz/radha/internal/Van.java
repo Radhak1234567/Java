@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Van {
-    int id;
-    String name;
-    double storageCapacity;
+ private    int id;
+   private String name;
+  private   double storageCapacity;
 
     public Van(int id, String name, double storageCapacity) {
         this.id = id;
@@ -14,5 +14,9 @@ public class Van {
     @Override
     public String toString() {
         return "Van{" + "id=" + id + ", name='" + name + '\'' + ", storageCapacity=" + storageCapacity + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 1;
     }
 }

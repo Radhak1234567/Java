@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Expose {
-    int id;
-    String title;
-    double price;
+    private int id;
+    private String title;
+    private double price;
 
     public Expose(int id, String title, double price) {
         this.id = id;
@@ -13,6 +13,11 @@ public class Expose {
 
     @Override
     public String toString() {
-        return "Book{" + "id=" + id + ", title='" + title + '\'' + ", price=" + price + '}';
+        return "Expose{" + "id=" + id + ", title='" + title + '\'' + ", price=" + price + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return 888;
     }
 }

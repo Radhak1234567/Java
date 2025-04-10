@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Laptop {
-    int id;
-    String brand;
-    double price;
+   private int id;
+   private String brand;
+  private   double price;
 
     public Laptop(int id, String brand, double price) {
         this.id = id;
@@ -14,5 +14,9 @@ public class Laptop {
     @Override
     public String toString() {
         return "Laptop{" + "id=" + id + ", brand='" + brand + '\'' + ", price=" + price + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 57899;
     }
 }

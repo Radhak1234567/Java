@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Vacuum {
-    int id;
-    String name;
-    double length;
+ private    int id;
+   private String name;
+  private   double length;
 
     public Vacuum(int id, String name, double length) {
         this.id = id;
@@ -13,6 +13,10 @@ public class Vacuum {
 
     @Override
     public String toString() {
-        return "Yacht{" + "id=" + id + ", name='" + name + '\'' + ", length=" + length + '}';
+        return "Vacuum{" + "id=" + id + ", name='" + name + '\'' + ", length=" + length + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 239456779;
     }
 }

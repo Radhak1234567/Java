@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Herbal {
-    int id;
-    String name;
-    double length;
+   private int id;
+   private String name;
+ private    double length;
 
     public Herbal(int id, String name, double length) {
         this.id = id;
@@ -13,6 +13,10 @@ public class Herbal {
 
     @Override
     public String toString() {
-        return "Yacht{" + "id=" + id + ", name='" + name + '\'' + ", length=" + length + '}';
+        return "Herbal{" + "id=" + id + ", name='" + name + '\'' + ", length=" + length + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 99;
     }
 }

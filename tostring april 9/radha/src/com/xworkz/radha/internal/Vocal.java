@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Vocal {
-    int id;
-    String name;
-    double length;
+  private   int id;
+    private String name;
+  private   double length;
 
     public Vocal(int id, String name, double length) {
         this.id = id;
@@ -13,6 +13,10 @@ public class Vocal {
 
     @Override
     public String toString() {
-        return "Yacht{" + "id=" + id + ", name='" + name + '\'' + ", length=" + length + '}';
+        return "Vocal {" + "id=" + id + ", name='" + name + '\'' + ", length=" + length + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 8;
     }
 }

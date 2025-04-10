@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Building {
-    int id;
-    String location;
-    double height;
+  private   int id;
+  private   String location;
+  private   double height;
 
     public Building(int id, String location, double height) {
         this.id = id;
@@ -14,5 +14,9 @@ public class Building {
     @Override
     public String toString() {
         return "Building{" + "id=" + id + ", location='" + location + '\'' + ", height=" + height + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 99;
     }
 }

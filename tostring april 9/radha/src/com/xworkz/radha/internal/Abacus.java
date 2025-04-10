@@ -1,5 +1,7 @@
 package com.xworkz.radha.internal;
 
+import java.util.Objects;
+
 public class Abacus {
     private String material;
      private String name;
@@ -14,5 +16,10 @@ public class Abacus {
     @Override
     public String toString() {
         return "Abacus{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return 99;
     }
 }

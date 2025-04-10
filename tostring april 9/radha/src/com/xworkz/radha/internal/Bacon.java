@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Bacon {
-    String material;
-    String name;
-    double capacity;
+  private   String material;
+  private   String name;
+   private double capacity;
 
     public Bacon(String material, String name, double capacity) {
         this. material =material;
@@ -13,6 +13,10 @@ public class Bacon {
 
     @Override
     public String toString() {
-        return "Bus{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+        return "Bacon{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 66;
     }
 }

@@ -1,18 +1,23 @@
 package com.xworkz.radha.internal;
 
 public class Gift {
-    String material;
-    String name;
-    double capacity;
+    private String material;
+    private String name;
+    private double capacity;
 
     public Gift(String material, String name, double capacity) {
-        this. material =material;
+        this.material = material;
         this.name = name;
         this.capacity = capacity;
     }
 
     @Override
     public String toString() {
-        return "Bus{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+        return "Gift{" + "material='" + material + '\'' + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return 9679;
     }
 }

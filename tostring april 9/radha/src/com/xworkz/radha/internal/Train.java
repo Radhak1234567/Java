@@ -1,8 +1,9 @@
 package com.xworkz.radha.internal;
 
-public class Train { int id;
-    String name;
-    double speed;
+public class Train {
+    private int id;
+  private   String name;
+    private double speed;
 
     public Train(int id, String name, double speed) {
         this.id = id;
@@ -15,4 +16,7 @@ public class Train { int id;
         return "Train{" + "id=" + id + ", name='" + name + '\'' + ", speed=" + speed + '}';
     }
 
-}
+ @Override
+public int hashCode() {
+    return 9086469;
+}}

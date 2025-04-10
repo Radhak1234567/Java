@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Paint {
-    String material;
-    String name;
-    double capacity;
+ private    String material;
+  private   String name;
+  private   double capacity;
 
     public Paint(String material, String name, double capacity) {
         this. material =material;
@@ -13,6 +13,10 @@ public class Paint {
 
     @Override
     public String toString() {
-        return "Bus{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+        return " Paint{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 234399;
     }
 }

@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Dish {
-    String material;
-    String name;
-    double capacity;
+ private    String material;
+ private    String name;
+  private   double capacity;
 
     public Dish(String material, String name, double capacity) {
         this. material =material;
@@ -13,6 +13,10 @@ public class Dish {
 
     @Override
     public String toString() {
-        return "Bus{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+        return "Dish{" + "id=" + material + ", name='" + name + '\'' + ", capacity=" + capacity + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 98;
     }
 }

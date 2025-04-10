@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Rice {
-    int id;
-    String name;
-    double length;
+   private int id;
+  private   String name;
+  private   double length;
 
     public Rice(int id, String name, double length) {
         this.id = id;
@@ -13,7 +13,11 @@ public class Rice {
 
     @Override
     public String toString() {
-        return "Yacht{" + "id=" + id + ", name='" + name + '\'' + ", length=" + length + '}';
+        return "Rice {" + "id=" + id + ", name='" + name + '\'' + ", length=" + length + '}';
+    }
+    @Override
+    public int hashCode() {
+        return 9232459;
     }
 }
 

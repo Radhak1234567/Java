@@ -1,9 +1,9 @@
 package com.xworkz.radha.internal;
 
 public class Artist {
-    int age;
-    String name;
-    double height;
+  private   int age;
+  private   String name;
+   private double height;
 
     public Artist(int age, String name, double height) {
         this. age =age;
@@ -13,6 +13,11 @@ public class Artist {
 
     @Override
     public String toString() {
-        return "Bus{" + "id=" + age + ", name='" + name + '\'' + ", height=" +height + '}';
+        return "Artist{" + "id=" + age + ", name='" + name + '\'' + ", height=" +height + '}';
     }
+    @Override
+    public int hashCode() {
+        return 209;
+    }
+
 }
